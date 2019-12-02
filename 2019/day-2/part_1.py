@@ -1,9 +1,3 @@
-with open("input", "r") as file:
-    opcode = file.read()
-
-opcode = [int(n) for n in opcode.split(',')]
-
-
 def calc_zeroth_value(opcode):
     for i in range(0, len(opcode), 4):
         if opcode[i] == 1:
@@ -15,5 +9,9 @@ def calc_zeroth_value(opcode):
 
 
 if __name__ == '__main__':
-    print(calc_zeroth_value(opcode))
+    with open("input", "r") as file:
+        opcode = file.read()
 
+    opcode = [int(n) for n in opcode.split(',')]
+
+    print(calc_zeroth_value(opcode))

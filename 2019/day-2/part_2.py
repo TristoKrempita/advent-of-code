@@ -1,5 +1,6 @@
 from part_1 import calc_zeroth_value
 
+
 def calc_values(opcode):
     for i in range(100):
         for j in range(100):
@@ -13,5 +14,4 @@ def calc_values(opcode):
 with open("input", "r") as file:
     opcode = file.read()
 
-if __name__ == '__main__':
-    print(calc_values(opcode))
+print(calc_values(opcode))
