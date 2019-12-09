@@ -43,4 +43,5 @@ if __name__ == '__main__':
         opcode = file.read()
 
     opcode = [int(n) for n in opcode.split(',')]
+    # Input: 1
     opcode_compile(opcode)
